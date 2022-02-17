@@ -4,6 +4,7 @@ import requests
 import json
 from keys import *
 
+
 src = "/home/pi/local/www/templates"
 dst = "/home/pi/local/www/"
 
