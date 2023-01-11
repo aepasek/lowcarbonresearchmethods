@@ -10,6 +10,7 @@ dst = "/home/pi/local/www/"
 
 getServer = "http://localhost"
 #getServer = "http://www.solarprotocol.net"
+#this got reversed in Jan 2022 reboot
 
 def getRequest(url):
 	try:			
@@ -127,7 +128,7 @@ for h in range(24):
 
 #scale the average power data to get a percentage
 #the default module size is 50 watts. if the server has a different sized module it will be scaled appropriately
-moduleSize = 50 * float(getRequest(getServer + "/api/v1/chargecontroller.php?systemInfo=wattage-scaler"))
+moduleSize = 50 # * float(getRequest(getServer + "/api/v1/chargecontroller.php?systemInfo=wattage-scaler"))
 
 # NOTE: in the future the background graph could be mapped so whatever the range of numbers is is visually larger on the page (currently hardcoded to 600px)
 powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
