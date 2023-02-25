@@ -1,8 +1,11 @@
  <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="lcm.css" />
 <title>Low Carbon Methods</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/logos/favicon-16x16.png">
 </head>
 
 <body>
@@ -10,16 +13,17 @@
 <div id="headerContainer">
 
     <div id="logoContainer">
-        <a href="index.html"><img src="assets/logo_white_on_clear.png"></a>
+        <a href="index.html"><img src=assets/logos/logo_black_on_clear.png></a>
     </div>
 
     <div id="header-background">
     </div>
 
     <div id="header-local">
-        <div class="serverLocation">This is a solar powered server in Trente, Canada where the time is 3:45.</div>
-        <div class="serverLocation">Today is: sunny</div>
-        <div class="serverLocation">Tomorrow is: cloudy</div>
+        <div class="serverLocation">Served from a solar powered server in <span class="hideMedium">Peterborough,</span> Canada</div>
+        <div class="serverLocation"><span class="hideMinimize">Today's weather: clear sky</span></div>
+        <div class="serverLocation"><span class="hideMinimize">Tomorrow's weather: broken clouds</span></div>
+        <div class="serverLocation"><span class="showSmall hideMinimize">Battery Charge: 52.0%</span></div>
     </div>
 
     <div id="menu"><a href="researchers.html#footer-nav">Menu</a></div>
@@ -36,144 +40,281 @@
 
     <div id="header-bat">
         <div id="batBar"></div>
-        <div id="batPercent">Battery Capacity 20%</div>
-<!--         <div class="statName">Battery Capacity</div>
- -->    </div>
+        <div id="batPercent">Battery Capacity 52.0%</div>
+    </div>
 
 </div>
 
 <div id=graphContainer>
     <div id="historyBar">
         <div class="hbarContainer">
-            <div class="hbar" id="hbar1"></div>
+            <div class="hbar" id="hbar1"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar2"></div>
+            <div class="hbar" id="hbar2"><span>1.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar3"></div>
+            <div class="hbar" id="hbar3"><span>3.9W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar4"></div>
+            <div class="hbar" id="hbar4"><span>17.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar5"></div>
+            <div class="hbar" id="hbar5"><span>19.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar6"></div>
+            <div class="hbar" id="hbar6"><span>8.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar7"></div>
+            <div class="hbar" id="hbar7"><span>5.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar8"></div>
+            <div class="hbar" id="hbar8"><span>4.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar9"></div>
+            <div class="hbar" id="hbar9"><span>4.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar10"></div>
+            <div class="hbar" id="hbar10"><span>3.6W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar11"></div>
+            <div class="hbar" id="hbar11"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar12"></div>
+            <div class="hbar" id="hbar12"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar13"></div>
+            <div class="hbar" id="hbar13"><span>1.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar14"></div>
+            <div class="hbar" id="hbar14"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar15"></div>
+            <div class="hbar" id="hbar15"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar16"></div>
+            <div class="hbar" id="hbar16"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar17"></div>
+            <div class="hbar" id="hbar17"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar18"></div>
+            <div class="hbar" id="hbar18"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar19"></div>
+            <div class="hbar" id="hbar19"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar20"></div>
+            <div class="hbar" id="hbar20"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar21"></div>
+            <div class="hbar" id="hbar21"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar22"></div>
+            <div class="hbar" id="hbar22"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar23"></div>
+            <div class="hbar" id="hbar23"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar24"></div>
+            <div class="hbar" id="hbar24"><span></span></div>
         </div>
     </div>
 
     <div id="time-container">
         <div id="twentyfour">-24 hrs</div>
         <div id="twelve">-12 hrs</div>
-        <div id="now">Now</div>
+        <div id="now">09:35 PM</div>
     </div>
     
 </div>
 
 <div id="content">
-    <div class="rRow">
+    <div class="profileContainer">
+
+<!-- UPDATE FROM HERE-->
+
         <div class="profile">
-            <img src="assets/AnnePasek.png">
-                Anne Pasek is the Canada Research Chair in Media, Culture, and the Environment at Trent University. She studies how carbon becomes communicable to different communities, to different social and material effects.
+            <img src="assets/researchers/AnnePasek.png">
+            <strong>Anne Pasek</strong> is the Canada Research Chair in Media, Culture, and the Environment at Trent University. She studies how carbon becomes communicable to different communities, to different social and material effects. She is the convener of the Low-Carbon Research Methods Group.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Aparajita.png">
+            <strong>Aparajita Bhandari</strong> is a PhD candidate and SSHRC doctoral fellow in the Department of Communication, Cornell University. Her research explores the intersection between material infrastructures, time and technology. She is interested in advancing community based and participatory research methods to explore research ethics and forms of knowledge creation outside of the academy. 
+        </div>
+ 
+
+        <div class="profile">
+            <img src="assets/researchers/Jessica.jpg">
+            <strong>Jessica Marion Barr</strong> is an artist-researcher whose interdisciplinary practice investigates creative and collaborative approaches to climate change, species decline, and social/ecological justice.  She teaches in Cultural Studies and the Bachelor of Arts and Science Program at Trent University in Nogojiwanong/Peterborough, Ontario, territory of the Michi Saagig Nishnaabeg.
+        </div>
+
+<div class="profile">
+            <img src="assets/researchers/Michelle.jpg">
+            <strong>Michelle Bastian</strong> is a Senior Lecturer in Environmental Humanities at the Edinburgh College of Art, University of Edinburgh. Her work crosses critical time studies and environmental humanities, with a focus on the role of time in human and more-than-human communities. She is the convener of a number of networks, including the Temporal Belongings research network, and is currently completing a locally-based fieldwork project on phenology.   
+        </div>
+
+
+        <div class="profile">
+           <img src="assets/researchers/Brent.jpg">
+            <strong>Brent Ryan Bellamy</strong> writes about his experiences teaching University courses on energy literacy, petroculture, and world building. His books Remainders of the American Century: Post-Apocalyptic Novels in the Age of US Decline, An Ecotopian Lexicon, and Materialism and the Critique of Energy are all available now.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Urmi.jpg">
+            <strong>Urmi Bhattacharyya</strong> teaches Sociology at Sri Venkateswara College (University of Delhi), New Delhi, India. Her research interests revolve around the politics of visuality, representation, inequality, and injustice. She is also interested in critical phenomenological perspectives in experience and agency, and in critical theoretical approaches to knowledge-production.
         </div>
         <div class="profile">
-            <img src="assets/logo_white_on_clear.png">
-                    Hello!
-
+            <img src="assets/researchers/Aksel.jpg">
+            <strong>Aksel Biørn-Hansen</strong> is an interaction designer currently doing a PhD in Human-Computer Interaction at KTH Royal Institute of Technology. In his research, Aksel uses design-oriented methods to explore different ways to promote a change toward more sustainable practices with the help of ICT. In particular, he is interested in how data about the climate impact from e.g. academic flying can be presented in order to make it more actionable for individuals and larger social groups.
         </div>
         <div class="profile">
-            <img src="assets/logo_white_on_clear.png">
-                    Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! Salutations! 
-
-
+            <img src="assets/researchers/Veronica.jpg">
+           <strong>Veronica Brodén Gyberg</strong> is an associate senior lecturer at the Department of Thematic Studies: Environmental Change and the Centre for Climate Science and Policy Research (CSPR) at Linköping University (LiU). Her research interests include science and technology policy, climate-related aid, the politics of decarbonization and just transition.
         </div>
-    </div>
 
-    <div class="rRow">
         <div class="profile">
-           
-            <img src="assets/logo_whitebackground.jpg">
-         Hi!
+            <img src="assets/researchers/JessC.png">
+           <strong>Jessica Caporusso</strong> is a Ph.D. Candidate in the program of Social Anthropology at York University (Toronto, Canada). Her dissertation explores the design and implementation of sustainable energy projects in the small island developing state of Mauritius, as well as the influence of colonial-era green imperialism with which these current projects are imbricated.
         </div>
         <div class="profile">
-            <img src="assets/Anne_Pasek.png">
-            Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! 
-
+            <img src="assets/researchers/Aadita.png">
+            <strong>Aadita Chaudhury</strong> is an interdisciplinary scholar, writer and arts practitioner. She is a Research Assistant to the Sonic Street Technologies project at Goldsmiths, University of London and PhD Candidate in Science and Technology Studies at York University in Canada. Her research attends to arts-based methodologies and how the senses can be instrumentalized as provocations and epistemologies. Her dissertation explores multifaceted cultural, material and environmental meaning-making, building on her ethnographic and media research on fire ecology and wildfire management. 
         </div>
         <div class="profile">
-            <img src="assets/catPV.png">
-            Salutations!
-
-        </div>
-    </div>
-
-    <div class="rRow">
-        <div class="profile">
-            <img src="assets/logo_white_on_clear.png">
-
-            Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! Hi! 
+            <img src="assets/researchers/Meredith.jpg">
+            <strong>Meredith Conti</strong> is an associate professor of theatre at the University at Buffalo, SUNY. A theatre historian and performance studies scholar, Meredith studies eco-theatre practices and has published on low-carbon (or "slow") academic travel as a gentler way of pursuing humanities research in the age of climate crisis.
         </div>
         <div class="profile">
-            <img src="assets/pass.png">
-
-            Hello!
+            <img src="assets/researchers/matt.png">            
+            <strong>Matthew Dalziel</strong> is an architect and principal of <a href="http://www.dalziel.no/">Atelier Dalziel</a>. He is a PhD by practice fellow at the Oslo School of Architecture and Design, where his research explores the intersectional quandaries of architectural craft, tectonic culture, and environmental crisis. His research interests include environmental humanities, new materialisms, and posthumanisms in concert with architectural histories and theories. In 2019 he was part of the chief curatorial team for the Oslo Architecture Triennale <i>Enough: The Architecture of Degrowth.</i>
         </div>
+        <div class="profile">
+            <img src="assets/researchers/Pauline.jpg">
+            <strong>Pauline Destrée</strong> is an anthropologist working on energy infrastructures, climate change and postcolonial politics in Ghana. She holds a particular commitment to integrating creative writing and visual arts into her ethnographic practice, and to reaching outside academia for collaborative forms of thinking and knowledge-making
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Kyle.jpg">
+            <strong>Kyle Devine</strong> is an associate professor in the Department of Musicology at the University of Oslo, and a working-group member in the Oslo School of Environmental Humanities. He is the author of <i>Decomposed: The Political Ecology of Music</i>.
+        </div>
+         <div class="profile">
+            <img src="assets/researchers/Madeline.png">
+            <strong>Madeline Donald</strong> is interested in the interaction possibilities that humans perceive in relation with plants in their quotidian environments. This research is a process of coming to understand how fields of perceived interaction possibilities, or landscapes affordances, structure and are structured by assertions of value. Currently, Madeline’s attention is tuned to the riparian communities of the semi-arid valley in which she lives as a resident-visitor. This work takes place with syilx Land, in the Okanagan watershed, in a what is currently referred to as British Columbia, Canada. 
+         </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Kate.jpg">
+            <strong>Kate Elliott</strong> is an educator and interdisciplinary PhD candidate at Simon Fraser University. Her SSHRC-funded research uses virtual collaborative storytelling techniques to trace the lives of grocery carts—from their birth in factories to their repurposed afterlives in the urban commons. Kate was the 2022 LCRMG Seasonal Scholar and co-director of the 2022 Summer Institute with Alexandra Lakind. She is offering Wayfinding for Restorative Methods through ongoing <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1KPizzVxte_u63EpfC9qXTrQFeW3XlEjjvfYdivQloiATkA/viewform">Low-Carbon Office Hours</a>.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/antoine.jpg">
+            <strong>Antoine Hardy</strong> is a French PhD student in political science (Centre Emile-Durkheim). His dissertation tries to understand what the "carbon footprint" does to scientific work. His fieldwork is a group of French scientists aiming at evaluating the carbon footprint of the French public research sector.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Zoe.jpg">
+            <strong>Zoë Heyn-Jones</strong> is a SSHRC postdoctoral fellow at the Centre for Sustainable Curating in the department of Visual Arts at Western University where she is developing an interdisciplinary arts-based project on food security, sovereignty and justice in Canada and Mexico. She lives and works in Tenochtitlan/Mexico City and Tkaranto/Toronto.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Rachel.jpg">
+            <strong>Rachel Webb Jekanowski</strong> is a researcher, educator, and community organizer whose work focuses on entanglements of place, energy, and visual culture. Dr. Jekanowski holds a Ph.D. in Film and Moving Image Studies from Concordia University and is an incoming Assistant Professor of Literature at Memorial University – Grenfell. https://rjekanowski.ca/ 
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Baldeep.jpg">
+            <strong>Baldeep Kaur</strong> is a doctoral fellow in the DFG-funded Research Training Group (RTG) Minor Cosmopolitanisms based at the University of Potsdam. Their work traces the afterlives of colonial infrastructures that continue to shape postcolonial modernities and futures.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Yani.jpg">
+            <strong>Yani Kong</strong> is SSHRC Doctoral Fellow at Simon Fraser University and a recipient of the Living Labs Grant, exploring sustainable practices in streaming media in online teaching, learning, and contemporary art. Kong is an instructor at Langara College, managing editor of the Comparative Media Arts Journal, and a contributing writer, editor and critic for several Canadian publications including Galleries West and Public Parking Journal.
+        </div>
+
+
+        <div class="profile">
+            <img src="assets/researchers/Alexandra.jpg">
+            <strong>Alexandra Lakind</strong> is an artist, educator, and scholar working across an array of contexts conducting research, arts and educational programming to foster collaboration and environmental connection. Lakind has received formal training from Interlochen Arts Academy (HS), Royal Conservatoire of Scotland (BA), New York University (MA), and University of Wisconsin–Madison (PhD). Lakind was the 2022 LCRMG Seasonal Scholar working with Kate Elliott to design and co-direct the LCRMG Office Hour initiative & Summer Institute. 
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Cindy.jpg">
+            <strong>Cindy Lin</strong> is a postdoctoral fellow at the Atkinson Center for Sustainability and Department of Information Science at Cornell University. Her current research focuses on the genealogies of ground truth in artificial intelligence (AI) systems deployed within the environmental sciences.
+        </div>
+        
+        <div class="profile">
+            <img src="assets/researchers/Maya.jpg">
+            <strong>Maya Livio</strong> is a researcher, media-maker, writer, and curator living in the California Coastal Sage & Chaparral and Chesapeake Rolling Coastal Plain ecoregions. Her justice-oriented, interdisciplinary work probes at the contact zones between ecosystems and technological systems. She is currently Assistant Professor of Climate, Environmental Justice, Media, and Communication at American University.
+        </div>
+        
+        <div class="profile">
+            <img src="assets/researchers/Filip.jpg">
+            <strong>Filip Maric</strong> is Associate Professor in physiotherapy at UiT The Arctic University of Norway, and has broad interests in the outer rims of healthcare, philosophy and planetary health. Filip also convenes the UiT Environmental Humanities network and is the founder and executive chair of the international Environmental Physiotherapy Association that is aiming to advance environmental responsibility in healthcare.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Laura.jpg">
+            <strong>Laura U. Marks</strong> works on media art and philosophy. She led the research group Tackling the Carbon Footprint of Streaming Media and is founder of the Small File Media Festival, smallfile.ca. Marks teaches in the School for the Contemporary Arts at Simon Fraser University in Vancouver.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Swati.jpg">
+            <strong>Swati Mehta</strong> is a PhD student in Culture Studies  at Trent University. She is interested in research at the intersection of technology, society, and the environment. Her PhD project focuses on digital activism in the context of climate movement and whether engagement online can be assessed outside the confines of platform metrics. Her research is informed by her own experience of working as a journalist and as a digital campaigner for the climate movement in India.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/benedetta.jpg">
+            <strong>Benedetta Piantella</strong> is a designer turned educator and humanitarian technologist. Her design research practice focuses on applying participatory design methods, systems thinking and user-centered design towards the design and implementation of distributed and resilient low-carbon networks. Benedetta is an Open Source advocate and is currently teaching and conducting research at NYU Tandon’s Integrated Digital Media Program.
+        </div>
+     
+        <div class="profile">
+            <img src="assets/researchers/Doug.jpg">
+            <strong>Doug Robb</strong> is the Ian McHarg Fellow at the University of Pennsylvania Weitzman School of Design. Trained in both landscape architecture and geography, Dr. Robb’s interdisciplinary work investigates the complex landscape transformations that result from contemporary decarbonization agendas.        </div>
+     
+        <div class="profile">
+            <img src="assets/researchers/Shirley.jpg">
+            <strong>Shirley Roburn</strong> is an Assistant Professor in the Department of Communication and Media Studies at York University in Toronto, Canada. She researches the public storytelling strategies used by indigenous communities and their civil society allies in order to reframe controversies over energy infrastructure development in terms of issues of land and water, food, and cultural sovereignty.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Emily.jpg">
+            <strong>Emily Roehl</strong> (she/her) is a settler scholar and artist who lives in the homelands of the Coahuiltecan, Jumanos, and Tonkawa. Her work on resistance to oil infrastructure uses a variety of media, including writing, photography, artist publications, and pedagogical projects.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Gabby.png">
+            <strong> Dr Gabrielle Samuel (Gabby) </strong> is a social scientist based at King’s College London, UK, whose current work explores how big data and AI (health) research could and/or should consider its adverse environmental impacts, and what such a consideration would look like from an ethical and responsibilities perspective. She currently holds a UK Wellcome Fellowship that is approaching these issues with a specific focus on genomics and biobanking
+        </div>
+        
+        <div class="profile">
+            <img src="assets/researchers/Mark.jpg">
+            <strong>Mark Simpson</strong> is a Professor of English at the University of Alberta researching the political philosophy of energy impasse. He is a PI on the Energy Humanities theme in the Future Energy Systems research network and one of three founding collaborators of the international research collective <i>After Oil: Explorations and Experiments in the Future of Energy, Culture, and Society</i>.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Brian.jpg">
+            <strong>Brian Sutherland</strong> is a PhD candidate at the Faculty of Information, University of Toronto at Semaphore Labs.  He has assembled a significant collection of historical product integrated photovoltaic devices and is studying them and writing their history, with a view to more sustainable electronics, as part of his thesis "solar powered information systems."
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Dawn.jpg">
+            <strong>Dawn Walker</strong> is a design researcher and PhD Candidate at the Faculty of Information, University of Toronto. Her research focuses on the possibilities for social transformation through the design of alternative and decentralized (web) infrastructures. She is a member-worker of Hypha, a tech worker co-operative, and co-organizes Our Networks, a conference about the past, present, and future of building our own network infrastructures. https://dcwalker.ca/
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Caleb.jpg">
+            <strong>Caleb Wellum</strong> is Assistant Professor of US History at the University of Toronto, Mississauga, a member of the Petrocultures Research Group, and Editor of Energy Humanities. His book about the 1970s energy crisis in the United States—<i>Energizing Neoliberalism</i>—is forthcoming from Johns Hopkins University Press. His current projects include writing a history of the 'New Economy', developing a critical carbon tracking app, and designing a low carbon undergraduate history seminar.
+        </div>
+
+        <div class="profile">
+            <img src="assets/researchers/Zeke.jpg">
+        <strong><a href="https://computationalcognition.ca/author/">Ezekiel (Zeke) Williams </a></strong>is a PhD student in applied mathematics at the University of Montreal and Mila, the Quebec AI institute. He studies the dynamics of probabilistic computation and learning in biological and artificial neural networks. Outside his research he is passionate about climate justice, grassroots organizing, and degrowth, and is working to decarbonize his academic circles and mobilize them to take climate action.
+        </div>
+<!-- UPDATE TO HERE-->
+
     </div>
 
 
@@ -190,13 +331,32 @@
         <div class="navLink"><a href="contact.html">Contact</a></div>
     </div>
     
-    <p>
-        This website is served from a solar powered server run by Low Carbon Research Methods, in collaboration with Solar Protocol, located in Trente, Canada
-    </p>
+   <div id="footer-content">
+        <p>
+            This website is served from a solar powered server run by the Low Carbon Research Methods group, in collaboration with Solar Protocol. The server is located in Peterborough, Canada. The design utilizes minimal design methods that lower the energy demands of the website. 
+        </p>
 
-    <p>
-        The design utilizes minimal design methods that lower the energy demands of the website. More info about the design of this site can be found <a href="/">here</a>.
-    </p>
+        <p>
+            The weather and photovoltaic (PV) system data was last updated at 09:35 PM on 01/10/23 local server time.
+        </p>
+            
+        <div id="fDataContainer">
+            <div class="fDataBox">
+                <p>Today's weather: clear sky</p>
+                <p>Tomorrow's weather: broken clouds</p>
+            </div>
+            <div class="fDataBox">
+                <p>Battery Charge: 52.0%</p>
+            </div>
+            <div class="fDataBox">
+                <p>Page Size: 1.37MB</p>
+            </div>
+        </div>
+
+        <p>The graph below shows PV power production over the last 24 hours.</p>
+
+    </div>
+    
 </div>
 
 </div>

@@ -1,24 +1,28 @@
  <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="lcm.css" />
 <title>Low Carbon Methods</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/logos/favicon-16x16.png">
 </head>
 
 <body>
 
 <div id="headerContainer">
     <div id="logoContainer">
-        <a href="index.html"><img src="assets/logo_white_on_clear.png"></a>
+        <a href="index.html"><img src=assets/logos/logo_black_on_clear.png></a>
     </div>
 
     <div id="header-background">
     </div>
 
     <div id="header-local">
-        <div class="serverLocation">This is a solar powered server in Trente, Canada where the time is 3:45.</div>
-        <div class="serverLocation">Today is: sunny</div>
-        <div class="serverLocation">Tomorrow is: cloudy</div>
+        <div class="serverLocation">Served from a solar powered server in <span class="hideMedium">Peterborough,</span> Canada</div>
+        <div class="serverLocation"><span class="hideMinimize">Today's weather: clear sky</span></div>
+        <div class="serverLocation"><span class="hideMinimize">Tomorrow's weather: broken clouds</span></div>
+        <div class="serverLocation"><span class="showSmall hideMinimize">Battery Charge: 52.0%</span></div>
     </div>
 
     <div id="menu"><a href="resources.html#footer-nav">Menu</a></div>
@@ -35,99 +39,99 @@
 
     <div id="header-bat">
         <div id="batBar"></div>
-        <div id="batPercent">Battery Capacity 20%</div>
-<!--         <div class="statName">Battery Capacity</div>
- -->    </div>
+        <div id="batPercent">Battery Capacity 52.0%</div>
+    </div>
 
 </div>
 
 <div id=graphContainer>
     <div id="historyBar">
         <div class="hbarContainer">
-            <div class="hbar" id="hbar1"></div>
+            <div class="hbar" id="hbar1"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar2"></div>
+            <div class="hbar" id="hbar2"><span>1.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar3"></div>
+            <div class="hbar" id="hbar3"><span>3.9W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar4"></div>
+            <div class="hbar" id="hbar4"><span>17.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar5"></div>
+            <div class="hbar" id="hbar5"><span>19.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar6"></div>
+            <div class="hbar" id="hbar6"><span>8.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar7"></div>
+            <div class="hbar" id="hbar7"><span>5.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar8"></div>
+            <div class="hbar" id="hbar8"><span>4.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar9"></div>
+            <div class="hbar" id="hbar9"><span>4.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar10"></div>
+            <div class="hbar" id="hbar10"><span>3.6W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar11"></div>
+            <div class="hbar" id="hbar11"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar12"></div>
+            <div class="hbar" id="hbar12"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar13"></div>
+            <div class="hbar" id="hbar13"><span>1.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar14"></div>
+            <div class="hbar" id="hbar14"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar15"></div>
+            <div class="hbar" id="hbar15"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar16"></div>
+            <div class="hbar" id="hbar16"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar17"></div>
+            <div class="hbar" id="hbar17"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar18"></div>
+            <div class="hbar" id="hbar18"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar19"></div>
+            <div class="hbar" id="hbar19"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar20"></div>
+            <div class="hbar" id="hbar20"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar21"></div>
+            <div class="hbar" id="hbar21"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar22"></div>
+            <div class="hbar" id="hbar22"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar23"></div>
+            <div class="hbar" id="hbar23"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar24"></div>
+            <div class="hbar" id="hbar24"><span></span></div>
         </div>
     </div>
 
     <div id="time-container">
         <div id="twentyfour">-24 hrs</div>
         <div id="twelve">-12 hrs</div>
-        <div id="now">Now</div>
+        <div id="now">09:35 PM</div>
     </div>
 
 </div>
 
 <div id="content">
-    
+
     <div id="contentItemContainer">
+
         <div class="contentItem">
             <h2>Resources</h2>
 
@@ -140,6 +144,7 @@
                 <a href="resources.html#rMobility">Mobility</a>
                 <a href="resources.html#rSpeed">Speed</a>
                 <a href="resources.html#rInsitutions">Universities/Methods as Institutions</a>
+                <a href="resources.html#rGeopolitics">Geopolitics</a>
             </div>
 
             <p>
@@ -147,40 +152,42 @@
             </p>
         </div>
 
-        <div class="contentItem">
+<!-- UPDATE FROM HERE-->
 
-            <h3 id="rAesthetics">Aesthetics</h3>
+        <div  id="rAesthetics" class="contentItem">
+
+            <h3>Aesthetics</h3>
             <p>
-                Nathanson, Alex. A History of Solar Power Art and Design. New York: Routledge, 2021.
+                Nathanson, Alex. <i>A History of Solar Power Art and Design.</i> New York: Routledge, 2021.
             </p>
             <p>
                 The Synthetics Collective. “A DIY Fieldguide for Reducing the Environmental Impact of Art Exhibitions.” 2021. <a href="https://plasticheart.solar/static/texts/PlasticHeart_DIY_FIELDGUIDE.pdf">https://plasticheart.solar/static/texts/PlasticHeart_DIY_FIELDGUIDE.pdf</a>. 
             </p>
         </div>
 
-        <div class="contentItem">
+        <div id="rArchives" class="contentItem">
 
-        <h3 id="rArchives">Archives</h3>
+        <h3>Archives</h3>
         <p>
-            Abbey, Heidi N. “The Green Archivist: A Primer for Adopting Affordable, Environmentally Sustainable, and Socially Responsible Archival Management Practices,” Archival Issues. https://minds.wisconsin.edu/handle/1793/72389 
+            Abbey, Heidi N. “The Green Archivist: A Primer for Adopting Affordable, Environmentally Sustainable, and Socially Responsible Archival Management Practices,” <i>Archival Issues. </i>https://minds.wisconsin.edu/handle/1793/72389 
         </p>
         <p>
-            Goldman, Ben. “It’s Not Easy Being Green(e): Digital Preservation in the Age of Climate Change,” Archival Values: Essays in Honor of Mark Greene. https://scholarsphere.psu.edu/resources/381e68bf-c199-4786-ae61-671aede4e041 
+            Goldman, Ben. “It’s Not Easy Being Green(e): Digital Preservation in the Age of Climate Change,” <i>Archival Values: Essays in Honor of Mark Greene. </i> https://scholarsphere.psu.edu/resources/381e68bf-c199-4786-ae61-671aede4e041 
         </p>
         <p>
-            Pendergrass, Keith L., Walker Sampson, Tessa Walsh, and Laura Alagna. 2019. “Toward Environmentally Sustainable Digital Preservation.” The American Archivist 82 (1): 165–206 https://dash.harvard.edu/bitstream/handle/1/40741399/360-9081-82.1.165.pdf 
+            Pendergrass, Keith L., Walker Sampson, Tessa Walsh, and Laura Alagna. 2019. “Toward Environmentally Sustainable Digital Preservation.” <i>The American Archivist</i> 82 (1): 165–206 https://dash.harvard.edu/bitstream/handle/1/40741399/360-9081-82.1.165.pdf 
         </p>
         <p>
             Sternfeld, Joshua et al. “Green Bytes: Sustainable Approaches to Digital Stewardship,” Digital Preservation Plenary Session, July 24, 2013. http://www.digitalpreservation.gov/meetings/documents/ndiipp13/Green_Bytes_Abstract_FINAL.pdf 
         </p>    
     </div>
 
-    <div class="contentItem">
+    <div id="rConferences" class="contentItem">
 
 
-        <h3 id="rConferences">Conferences</h3>
+        <h3>Conferences</h3>
         <p>
-            Mead, Margaret, and Paul Byers. The Small Conference: An Innovation in Communication, 2015. https://0-doi-org.pugwash.lib.warwick.ac.uk/10.1515/9783111559100.
+            Mead, Margaret, and Paul Byers. <i>The Small Conference: An Innovation in Communication,</i> 2015. https://0-doi-org.pugwash.lib.warwick.ac.uk/10.1515/9783111559100.
         </p>
         <p>
             Pasek, Anne, Caleb Wellum, and Emily Roehl. “Making and Meeting Online: A White Paper on E-Conferences, Workshops, and other Experiments in Low-Carbon Research Exchange.” Petrocultures Research Group. https://www.energyhumanities.ca/news/making-and-meeting-online.
@@ -189,31 +196,37 @@
             Sarabipour, Sarvenaz. “Evaluating features of scientific conferences: A call for improvements.” 21 April 2020. https://www.biorxiv.org/content/biorxiv/early/2020/04/21/2020.04.02.022079.full.pdf. 
         </p>
         <p>
+        Skiles, Matthew, Euijin Yang, Orad Reshef et al. "Conference Demographics and Footprint Changed by Virtual Platforms." <i>Nature Sustainability </i>(2021). https://doi.org/10.1038/s41893-021-00823-2
+        </p>
+        <p>
             Svensson, Patrik. “Some Thoughts on Making Academic Events with Particular Attention to the Mid-Sized Event,” October 15, 2019. http://patriksv.net/some-thoughts-on-making-academic-events/.
     </p>
     </div>
 
-    <div class="contentItem">
+    <div id="rDigitalDesign" class="contentItem">
 
-        <h3 id="rDigitalDesign">Digital Design</h3>
+        <h3>Digital Design</h3>
 
         <p>
-            De Decker, Kris. “How to Build a Low-tech Website.” Low Tech Magazine, 24 September 2018, https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website.html
+            De Decker, Kris. “How to Build a Low-tech Website.” <i>Low Tech Magazine,</i> 24 September 2018, https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website.html
         </p>
         <p>
             Formafantasma’s design portfolio: https://formafantasma.com/website.
         </p>
         <p>
-            Jarrett, Tom. “Designing Sustainable Interaction Design Principles.” Branch Magazine, 15 October 2020, https://branch.climateaction.tech/2020/10/15/designing-branch-sustainable-interaction-design-principles/.
+            Jarrett, Tom. “Designing Sustainable Interaction Design Principles.” <i>Branch Magazine,</i> 15 October 2020, https://branch.climateaction.tech/2020/10/15/designing-branch-sustainable-interaction-design-principles/.
         </p>
         <p>
-            Kazemi, Darius. Run your own social. https://runyourown.social/.
+            Kazemi, Darius. <i>Run your own social.</i> https://runyourown.social/.
+        </p>
+        <p>
+            Liu, Jen et al. "Towards a Material Ethics of Computing." Digital zine. July 2022. http://lowcarbonmethods.com/MaterialEthics.html.
         </p>
         <p>
             Neocities (a community of often retro-inspired, user-coded, low-bandwidth personal websites): https://neocities.org/. 
         </p>
         <p>
-            Parnitzke, Daniel. Finding Pleasure in Scarcity. MA Thesis, Design Academy Eindhoven. http://pleasureinscarcity.com/
+            Parnitzke, Daniel. "Finding Pleasure in Scarcity."" MA Thesis, Design Academy Eindhoven. http://pleasureinscarcity.com/
         </p>
         <p>
             Piantella, Benedetta, Alex Nathanson, Tega Brain, and Keita Ohshiro. “Solar-Powered Server: Designing for a More Energy Positive Internet.” 2020 CHI Conference on Human Factors in Computing Systems. New York, NY, USA: Association for Computing Machinery, 2020. https://doi.org/10.1145/3334480.3383155. 
@@ -222,60 +235,85 @@
             Roscam Abbing, Roel. “‘This Is a Solar-Powered Website, Which Means It Sometimes Goes Offline’: A Design Inquiry into Degrowth and ICT. In LIMITS’21: Workshop on Computing within Limits, June 14–15, 2021. https://computingwithinlimits.org/2021/papers/limits21-abbing.pdf. 
         </p>
         <p>
-            Ye, Lu. “Design for Carbon-Aware Digital Experiences.” Branch Magazine, 10 October 2020. https://branch.climateaction.tech/2020/10/11/design-for-carbon-aware-digital-experiences/.
+            Sutherland, Brian. "Strategies for Degrowth Computing." In LIMITS’22: Workshop on Computing within Limits, June 21-22, 2021. https://computingwithinlimits.org/2022/papers/limits22-final-Sutherland.pdf. 
+        </p>
+        <p>
+            Ye, Lu. “Design for Carbon-Aware Digital Experiences.” <i>Branch Magazine</i>, 10 October 2020. https://branch.climateaction.tech/2020/10/11/design-for-carbon-aware-digital-experiences/.
         </p>
     </div>
 
-    <div class="contentItem">
-        <h3 id="rDisability">Disability</h3>
+    <div id="rDisability" class="contentItem">
+        <h3>Disability</h3>
         <p>
-            Hamraie, Aimi. “Designing Collective Access: A Feminist Disability Theory of Universal Design.” Disability Studies Quarterly 33, no. 4 (September 5, 2013). https://doi.org/10.18061/dsq.v33i4.3871.
+            Hamraie, Aimi. “Designing Collective Access: A Feminist Disability Theory of Universal Design.” <i>Disability Studies Quarterly </i>33, no. 4 (September 5, 2013). https://doi.org/10.18061/dsq.v33i4.3871.
         </p>
         <p>
-            Hamraie, Aimi, and Kelly Fritsch. “Crip Technoscience Manifesto.” Catalyst: Feminism, Theory, Technoscience 5, no. 1 (April 1, 2019): 1–33. https://doi.org/10.28968/cftt.v5i1.29607.
+            Hamraie, Aimi, and Kelly Fritsch. “Crip Technoscience Manifesto.” <i>Catalyst: Feminism, Theory, Technoscience</i> 5, no. 1 (April 1, 2019): 1–33. https://doi.org/10.28968/cftt.v5i1.29607.
         </p>
     </div>
 
-    <div class="contentItem">
-        <h3 id="rMobility">Mobility</h3>
+    <div id="rMobility" class="contentItem">
+        <h3>Mobility</h3>
+        <p>
+            Bjørkdahl, Kristian, and Adrian Santiago Franco Duharte, eds. 2022. <i>Academic Flying and the Means of Communication.</i> Singapore: Palgrave Macmillan. https://doi.org/10.1007/978-981-16-4911-0_3.
+        </p>
         <p>
             Flying Less in Academia Resource Guide, ed. Ryan Katz-Rosen. (A good collection of different studies, editorials, petitions, etc. from the flying less movement).
         </p>
         <p>
-            Glover, Andre, Yolande Strengers, and Tania Lewis. “The Unsustainability of Academic Aeromobility in Australian Universities.” Sustainability: Science, Practice and Policy 13, no. 1 (2017): 1–12.
+            Glover, Andre, Yolande Strengers, and Tania Lewis. “The Unsustainability of Academic Aeromobility in Australian Universities.” <i>Sustainability: Science, Practice and Policy</i> 13, no. 1 (2017): 1–12.
         </p>
         <p>
-            Günel, Gökçe, Saiba Varma, and Chika Watanabe. “A Manifesto for Patchwork Ethnography.” Fieldsights, June 9, 2020. https://culanth.org/fieldsights/a-manifesto-for-patchwork-ethnography.
+            Günel, Gökçe, Saiba Varma, and Chika Watanabe. “A Manifesto for Patchwork Ethnography.” <i>Fieldsights</i>, June 9, 2020. https://culanth.org/fieldsights/a-manifesto-for-patchwork-ethnography.
         </p>
         <p>
-            Jungnickel, Katrina. “Getting There… and Back: How Ethnographic Commuting (by Bicycle) Shaped a Study of Australian Backyard Technologists.” Qualitative Research 14, no. 6 (December 1, 2014): 640–55. https://doi.org/10.1177/1468794113481792.
+            Jungnickel, Katrina. “Getting There… and Back: How Ethnographic Commuting (by Bicycle) Shaped a Study of Australian Backyard Technologists.” <i>Qualitative Research </i>14, no. 6 (December 1, 2014): 640–55. https://doi.org/10.1177/1468794113481792.
         <p>
         </p>
-            Nevins, Joseph. “Academic Jet-Setting in a Time of Climate Destabilization: Ecological Privilege and Professional Geographic Travel.” The Professional Geographer 66, no. 2 (April 3, 2014): 298–310. https://doi.org/10.1080/00330124.2013.784954.
+            Nevins, Joseph. “Academic Jet-Setting in a Time of Climate Destabilization: Ecological Privilege and Professional Geographic Travel.” <i>The Professional Geographer </i>66, no. 2 (April 3, 2014): 298–310. https://doi.org/10.1080/00330124.2013.784954.
         </p>
         <p>
-            Sheller, Mimi. Mobility Justice: The Politics of Movement in an Age of Extremes. London: Verso, 2018.
+            Sheller, Mimi. <i>Mobility Justice: The Politics of Movement in an Age of Extremes.</i> London: Verso, 2018.
         </p>
+         <p>
+        Zeferina, Vasco, & Claire Hoolohan. (2022). "Academic aeromobility post-COVID 19." Tyndall Centre for Climate Change Research. https://www.research.manchester.ac.uk/portal/files/215957123/Academic_Aeromobility_Post_Covid.pdf.
+      </p>
     </div>
     
-    <div class="contentItem">
-        <h3 id="rSpeed">Speed</h3>
+    <div id="rSpeed" class="contentItem">
+        <h3>Speed (and Time)</h3>
         <p>
-            Mountz, Alison, et al. "For slow scholarship: A feminist politics of resistance through collective action in the neoliberal university." ACME: An International Journal for Critical Geographies 14.4 (2015): 1235-1259. https://acme-journal.org/index.php/acme/article/view/1058
+            Bautista Perpinyà, Max. "Online conferences won’t do it. Instead of ‘sustainable’ academic history, we need engaged historians working less and collaborating with activists." <i> Historians for the Future</i> 18 November 2021. https://historiansforfuture.org/online-conferences-wont-do-it/.
         </p>
         <p>
-            Meredith Conti, “Slow Academic Travel: An Antidote to “Fly Over” Scholarship in the Age of Climate Crisis, Theatre Topics 31.1 (2021): https://muse.jhu.edu/article/786251
+            Conti, Meredith. “Slow Academic Travel: An Antidote to “Fly Over” Scholarship in the Age of Climate Crisis, <i>Theatre Topics </i> 31.1 (2021): https://muse.jhu.edu/article/786251.
+        </p>
+        <p>
+            Mountz, Alison, et al. "For slow scholarship: A feminist politics of resistance through collective action in the neoliberal university." <i>ACME: An International Journal for Critical Geographies</i> 14.4 (2015): 1235-1259. https://acme-journal.org/index.php/acme/article/view/1058.
+        </p>
+       
+      
+
+
+    </div>
+    <div id="rInsitutions" class="contentItem">
+        <h3>Universities/Methods as Institutions</h3>
+        <p>
+            paperson, la. <i> A Third University Is Possible. </i>Minneapolis: University of Minnesota Press, 2017.
+        </p>
+        <p>
+            Liboiron, Max. <i>Pollution Is Colonialism.</i> Durham: Duke University Press, 2021.
         </p>
     </div>
-    <div class="contentItem">
-        <h3 id="rInsitutions">Universities/Methods as Institutions</h3>
+
+
+    <div  id="rGeopolitics" class="contentItem">
+        <h3>Geopolitics</h3>
         <p>
-            paperson, la. A Third University Is Possible. Minneapolis: University of Minnesota Press, 2017.
+            Easton, Max, and Lizzie Nagy. "Beyond the Scope." <i>The Nib</i>. 2021. https://thenib.com/beyond-the-scope/. 
         </p>
-        <p>
-            Liboiron, Max. Pollution Is Colonialism, 2021.
-        </p>
-    </div>
+<!-- UPDATE TO HERE-->
+
 </div>
 
 <div id=footer>
@@ -289,13 +327,32 @@
         <div class="navLink"><a href="contact.html">Contact</a></div>
     </div>
 
-    <p>
-        This website is served from a solar powered server run by Low Carbon Research Methods, in collaboration with Solar Protocol, located in Trente, Canada
-    </p>
+    <div id="footer-content">
+        <p>
+            This website is served from a solar powered server run by the Low Carbon Research Methods group, in collaboration with Solar Protocol. The server is located in Peterborough, Canada. The design utilizes minimal design methods that lower the energy demands of the website. 
+        </p>
 
-    <p>
-        The design utilizes minimal design methods that lower the energy demands of the website. More info about the design of this site can be found <a href="/">here</a>.
-    </p>
+        <p>
+            The weather and photovoltaic (PV) system data was last updated at 09:35 PM on 01/10/23 local server time.
+        </p>
+            
+        <div id="fDataContainer">
+            <div class="fDataBox">
+                <p>Today's weather: clear sky</p>
+                <p>Tomorrow's weather: broken clouds</p>
+            </div>
+            <div class="fDataBox">
+                <p>Battery Charge: 52.0%</p>
+            </div>
+            <div class="fDataBox">
+                <p>Page Size: 71.75KB</p>
+            </div>
+        </div>
+
+        <p>The graph below shows PV power production over the last 24 hours.</p>
+
+    </div>
+
 </div>
 
 </div>

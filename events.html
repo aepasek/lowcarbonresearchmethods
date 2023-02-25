@@ -1,24 +1,28 @@
  <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="lcm.css" />
 <title>Low Carbon Methods</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/logos/favicon-16x16.png">
 </head>
 
 <body>
 
 <div id="headerContainer">
     <div id="logoContainer">
-        <a href="index.html"><img src="assets/logo_white_on_clear.png"></a>
+        <a href="index.html"><img src=assets/logos/logo_black_on_clear.png></a>
     </div>
 
     <div id="header-background">
     </div>
 
     <div id="header-local">
-        <div class="serverLocation">This is a solar powered server in Trente, Canada where the time is 3:45.</div>
-        <div class="serverLocation">Today is: sunny</div>
-        <div class="serverLocation">Tomorrow is: cloudy</div>
+        <div class="serverLocation">Served from a solar powered server in <span class="hideMedium">Peterborough,</span> Canada</div>
+        <div class="serverLocation"><span class="hideMinimize">Today's weather: clear sky</span></div>
+        <div class="serverLocation"><span class="hideMinimize">Tomorrow's weather: broken clouds</span></div>
+        <div class="serverLocation"><span class="showSmall hideMinimize">Battery Charge: 52.0%</span></div>
     </div>
 
     <div id="menu"><a href="events.html#footer-nav">Menu</a></div>
@@ -36,150 +40,300 @@
 
     <div id="header-bat">
         <div id="batBar"></div>
-        <div id="batPercent">Battery Capacity 20%</div>
-<!--         <div class="statName">Battery Capacity</div>
- -->    </div>
+        <div id="batPercent">Battery Capacity 52.0%</div>
+    </div>
 
 </div>
 
 <div id=graphContainer>
     <div id="historyBar">
         <div class="hbarContainer">
-            <div class="hbar" id="hbar1"></div>
+            <div class="hbar" id="hbar1"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar2"></div>
+            <div class="hbar" id="hbar2"><span>1.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar3"></div>
+            <div class="hbar" id="hbar3"><span>3.9W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar4"></div>
+            <div class="hbar" id="hbar4"><span>17.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar5"></div>
+            <div class="hbar" id="hbar5"><span>19.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar6"></div>
+            <div class="hbar" id="hbar6"><span>8.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar7"></div>
+            <div class="hbar" id="hbar7"><span>5.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar8"></div>
+            <div class="hbar" id="hbar8"><span>4.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar9"></div>
+            <div class="hbar" id="hbar9"><span>4.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar10"></div>
+            <div class="hbar" id="hbar10"><span>3.6W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar11"></div>
+            <div class="hbar" id="hbar11"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar12"></div>
+            <div class="hbar" id="hbar12"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar13"></div>
+            <div class="hbar" id="hbar13"><span>1.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar14"></div>
+            <div class="hbar" id="hbar14"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar15"></div>
+            <div class="hbar" id="hbar15"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar16"></div>
+            <div class="hbar" id="hbar16"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar17"></div>
+            <div class="hbar" id="hbar17"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar18"></div>
+            <div class="hbar" id="hbar18"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar19"></div>
+            <div class="hbar" id="hbar19"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar20"></div>
+            <div class="hbar" id="hbar20"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar21"></div>
+            <div class="hbar" id="hbar21"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar22"></div>
+            <div class="hbar" id="hbar22"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar23"></div>
+            <div class="hbar" id="hbar23"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar24"></div>
+            <div class="hbar" id="hbar24"><span></span></div>
         </div>
     </div>
 
     <div id="time-container">
         <div id="twentyfour">-24 hrs</div>
         <div id="twelve">-12 hrs</div>
-        <div id="now">Now</div>
+        <div id="now">09:35 PM</div>
     </div>
 
 </div>
 
 <div id="content">
     <div id="eventContainer">
-    <div class="event">
-        <h2>My event info!</h2>
 
-        <p>
-            My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! 
-        </p>
-    </div>
+<!-- UPDATE FROM HERE -->
+<div class="contentItem">
+            <H2>Low-Carbon Research Methods Office Hours</H2>
+            <p>
+                The LCRM “Office Hour” is designed to support people at any stage in their career, including faculty, students, and staff in university settings, as well as artists, activists, and researchers in both private and not-for-profit sectors. This 1-hour session is geared towards the development of low-carbon approaches that advance environmental and social justice. Office Hours are facilitated by LCRMG member Kate Elliott, who will prompt you to reflect on the processes that shape how you make and share work. 
+            </p>
+            <p>
+                Sign up for an Office Hour to learn more about the development of wayfinding techniques for restorative methods, and how to get connected to ongoing opportunities for engagement <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1KPizzVxte_u63EpfC9qXTrQFeW3XlEjjvfYdivQloiATkA/viewform">HERE</a>.
+              </p>
+</div>
 
-     <div class="event">
-        <h2>My event info!</h2>
+<div class="contentItem">
+            <H2><a href="https://blogs.helsinki.fi/environment/2022/10/09/energyandhumanities-low-carbon-research-methods-workshop/">Energy(and)Humanities: Low-Carbon Research Methods Workshop</a></H2>
+            <p>
+                This workshop is organized by Kate Elliott, Alexandra Lakind, and Inna Häkkinen as a part of The Environmental Humanities Month at the University of Helsinki. It invites all those who want to explore the prospects for more climate-friendly research methods, and discuss the practical barriers and challenges of implementing a low-carbon approach in research towards advancing environmental and social justice. Participants will be invited to discuss low-carbon ways of data storage, low energy and low-data design choices of data visualization as well as a zine-based format of presenting the research outlines. The presenters will encourage the participants to think more about the ways how their practices intersect with carbon-intensive expectations and norms, and to consider alternatives within academia and beyond.
+              </p>
+</div>
 
-        <p>
-            My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! 
-        </p>
-    </div>
-    
-    <div class="event">
-        <h2>My event info!</h2>
-
-        <p>
-            My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! 
-        </p>
-    </div>
-    <div class="event">
-        <h2>My event info!</h2>
-
-        <p>
-            My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! My event info! 
-        </p>
-    </div>
+<div class="contentItem">
+            <h2>Academic Activism and Low-Carbon Research Workshop</h2>
+            <p>
+                How are research methods impacted by climate change? To what extent do they contribute to it? How can we free research from the financing of fossil fuels industries and, more broadly, from acarbon-based relationship to knowledge? These are some of the key questions that the scholars involved in this international workshop will address. This workshop is organized by the Low-Carbon Methods Research Group, a loosely affiliated network of scholars interested in investigating the impact of climate change on academic researchmethods, as well as the equity and epistemological gains that might be found in an energy transition for the research sector. 
+             </p>
+              <p>
+                Speakers: Anne Pasek, Antoine  Hardy, Hannah Knox, Olivier Berné, Tamara Ben Ari, Ilana Cohen, Alexandra Lakind, Kate Elliott, Aadita Chaudhury, Tim Schütz, Megan Raby
+             </p>
+              <p>
+             Friday 30, September 2022, online.
+           </p>
+             <p>
+            9 am Washington, 2pm London, 3pm Paris, 6.30 pm Delhi
+             </p>
+            <p>
+                To register, please send an e-mail to : antoine.hardy@scpobx.fr
+            </p>
 </div>
 
 
-<div id=footer>
+<div class="contentItem">
+            <h2><a href="https://www.diymethods.net/" target="_blank">DIY Methods 2022</a></h2>
+            <p>
+                A zine-based conference-by-mail highlighting experimental methods through experimental means. Discussion on September 9th 2022 via Twitter (#DIYMethods).
+            </p>
+</div>
 
-    <div id="footer-nav">
-        <div class="navLink"><a href="index.html">About</a></div>
-        <div class="navLink"><a href="researchers.html">Researchers</a></div>
-        <div class="navLink" id="onPage"><a href="events.html">Events</a></div>
-        <div class="navLink"><a href="publications.html">Publications</a></div>
-        <div class="navLink"><a href="resources.html">Resources</a></div>
-        <div class="navLink"><a href="contact.html">Contact</a></div>
+<div class="contentItem">
+            <h2>2022 Low-Carbon Research Methods Summer Institute</h2>
+            <p>
+                During July & August anyone can sign up for an “Office Hour” to think more about the ways their practices intersect with carbon-intensive expectations and norms, and to consider alternatives. This 1-hour session will be geared towards a low-carbon approach that advances environmental and social justice. Office Hour participants will be invited to enroll in the Summer Institute Certificate program, which will entail attending a speculative workshop in August and reflecting on low-carbon tools and techniques. The Summer Institute will be directed by Alexandra Lakind & Kate Elliott. 
+</div>
+
+<div class="contentItem">
+            <h2>Low-Carbon Research Methods Showcase - February 11 & 25 2022</h2>
+            <p>
+                Presentation of collaboratively written methods position papers and a wider deliberation on key theses of low-carbon research methods.
+            </p>
+</div>
+<div class="contentItem">
+            <h2>Digital Conviviality Workshop - February 7 2022</h2>
+                       <p>
+                Run by Shirley Roburn and Katie Giddings 
+            </p>
+            <p>
+                A workshop drawing from the tools and directions of authentic relating. Can the fun and feelings of real connection that we get from in-person conferences be possible online? Because decarbonizing academic conferences plays an important role in decolonizing academic exchange, making informal virtual event spaces convivial is an increasingly vital skill for academic event organizers. This workshop takes participants through a series of activities, easy to learn and facilitate in virtual settings, that are designed to create genuine connection between people and encourage attendees to be fully present in the moment. We will discuss the theory that informs these activities, and share resources to encourage participants to adapt them to their own contexts. We aim to encourage a greater sense of community among scholars with a shared interest in reducing their carbon footprint. 
+            </p>
+        </div>
+        <div class="contentItem">
+            <h2>Low Carbon Methods & Media Lecture Series - November 12, 2021</h2>
+            <p>
+            <img src="assets/coffee.jpg" alt="screenshot of a group discussion in the spatial chat platform; many small bubbles with videos of faces gather around Michelle as she delivers a slide that reads spatial design">
+        </p>
+            <p>
+                ‘What about the coffee break?’: Designing a low-carbon online conference for conviviality, November 12 2021, by <a href="https://www.michellebastian.net/" target="_blank">Michelle Bastian</a>. 
+            </p>
+
+            <p>
+                This talk uses <i>The Material Life of Time</i> conference as a case study for discussing how we can support conviviality within online events. How successful were we at addressing ‘the coffee break problem’ which has continued to haunt our collective perception of online events? I will suggest that paying at least as much attention to hosting and community-building, as to programme design and delivery, is vital for embedding online conferences as activities that people want to go to. At the same time, I raise concerns about the rapidly entrenched norm that online conferences are not seen as ‘events’ that we can prioritise in our schedules and block off from other commitments. Instead, both on a personal level and an institutional level there are barriers to full engagement, which need to be addressed if we are to make the aspects we say we miss -- like informal networking and full attendance -- a better supported possibility.
+            </p>
+        </div>
+
+        <div class="contentItem">
+            <h2>Low Carbon Methods & Media Lecture Series - April 14, 2021</h2>
+            <video controls preload="none">
+                <source src="assets/Hannah.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos, but you can <a href="assets/Hannah.mp4">download it here.</a>
+            </video>
+            <p>
+                An Autoethnography of Academic Carbon,<br>
+                April 14th 2021, by <a href="https://hannahknox.wordpress.com/about/" target="_blank">Hannah Knox</a>. 
+            </p>
+            <p>
+                This talk was part of the 2021 Low Carbon Methods & Media Lecture Series. Through short and conversational exchanges, the series explores the prospects for more climate-safe research methods and media practices in the arts, humanities, and social sciences as well as the practical barriers and social and aesthetic norms challenged thereby. Past lectures are archived here, in a significantly compressed form, to keep file sizes low enough to fit within the constraints of the Solar Protocol network and the local server at Trent University. Many thanks to the folks at Small File Media Festival for the technical suggestions to this end.
+            </p>
+        </div>
+
+        <div class="contentItem">
+            <h2>Low Carbon Methods & Media Lecture Series - April 7, 2021</h2>
+
+            <video controls preload="none">
+                  <source src="assets/Cindy.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos, but you can <a href="assets/Cindy.mp4">download it here.</a>
+                </video>
+               <p>
+                    Minimal Cloud: A Postcolonial (Low Carbon) Approach to Environmental Data Infrastructure and Computing,<br>
+                    April 7th 2021, by <a href="https://cindylin.org/" target="_blank">Cindy Lin</a>. 
+               </p>
+                <p>
+                    This talk was part of the 2021 Low Carbon Methods & Media Lecture Series. Through short and conversational exchanges, the series explores the prospects for more climate-safe research methods and media practices in the arts, humanities, and social sciences as well as the practical barriers and social and aesthetic norms challenged thereby. Past lectures are archived here, in a significantly compressed form, to keep file sizes low enough to fit within the constraints of the Solar Protocol network and the local server at Trent University. Many thanks to the folks at Small File Media Festival for the technical suggestions to this end.
+                </p>
+        </div>
+
+         <div class="contentItem">
+            <h2>Low Carbon Methods & Media Lecture Series - March 9, 2021</h2>
+
+            <video controls preload="none">
+                  <source src="assets/Laura.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos, but you can <a href="assets/Laura.mp4">download it here.</a> 
+            </video>
+            <p>
+                Tackling the Carbon Footprint of Streaming Media: The Small File Media Festival,<br>
+                March 9 2021, by <a href="https://creativedisturbance.org/voice/radek-przedpelski/" target="_blank">Radek Przedpełski</a> and <a href="http://www.sfu.ca/~lmarks/" target="_blank">Laura U. Marks</a>. 
+            </p>
+            <p>
+                This talk was part of the 2021 Low Carbon Methods & Media Lecture Series. Through short and conversational exchanges, the series explores the prospects for more climate-safe research methods and media practices in the arts, humanities, and social sciences as well as the practical barriers and social and aesthetic norms challenged thereby. Past lectures are archived here, in a significantly compressed form, to keep file sizes low enough to fit within the constraints of the Solar Protocol network and the local server at Trent University. Many thanks to the folks at Small File Media Festival for the technical suggestions to this end.
+            </p>
+        </div>
+        
+        <div class="contentItem">
+            <h2>Low Carbon Methods & Media Lecture Series - February 9th, 2021</h2>
+
+            <video controls preload="none">
+                  <source src="assets/Radek.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos, but you can <a href="assets/Radek.mp4">download it here.</a>
+                </video>
+                <p>
+                    Tackling the Carbon Footprint of Streaming Media: Research in IT Engineering,<br>
+                    February 9th 2021, by <a href="http://www.sfu.ca/~lmarks/" target="_blank">Laura U. Marks</a> with <a href="http://makonin.com/" target="_blank">Stephan Makonin</a>, Alejandro Rodriguez-Silva, and <a href="https://creativedisturbance.org/voice/radek-przedpelski/" target="_blank">Radek Przedpełski</a>. 
+                </p>
+                <p>
+                    This talk was part of the 2021 Low Carbon Methods & Media Lecture Series. Through short and conversational exchanges, the series explores the prospects for more climate-safe research methods and media practices in the arts, humanities, and social sciences as well as the practical barriers and social and aesthetic norms challenged thereby. Past lectures are archived here, in a significantly compressed form, to keep file sizes low enough to fit within the constraints of the Solar Protocol network and the local server at Trent University. Many thanks to the folks at Small File Media Festival for the technical suggestions to this end.
+                </p>
+        </div>
+
+        <div class="contentItem">
+            <h2>Low Carbon Methods & Media Lecture Series - January 18th, 2021</h2>
+
+            <video controls preload="none">
+                <source src="assets/Johan.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos, but you can <a href="assets/Johan.mp4">download it here.</a>
+            </video>
+            <p>
+                Liftoff Holocene – Touchdown Anthropocene: Academics Reflect on Carbon-Intensive Scholarship in the Early 21st Century,<br>
+                January 18th 2021, by <a href="https://theseedbox.se/people/johan-gardebo/" target="_blank">Johan Gärdebo</a>. 
+            </p>
+            <p>
+                This talk was part of the 2021 Low Carbon Methods & Media Lecture Series. Through short and conversational exchanges, the series explores the prospects for more climate-safe research methods and media practices in the arts, humanities, and social sciences as well as the practical barriers and social and aesthetic norms challenged thereby. Past lectures are archived here, in a significantly compressed form, to keep file sizes low enough to fit within the constraints of the Solar Protocol network and the local server at Trent University. Many thanks to the folks at Small File Media Festival for the technical suggestions to this end.
+            </p>
+        </div>
+
+<!-- UPDATE TO HERE-->
+
     </div>
 
-    <p>
-        This website is served from a solar powered server run by Low Carbon Research Methods, in collaboration with Solar Protocol, located in Trente, Canada
-    </p>
 
-    <p>
-        The design utilizes minimal design methods that lower the energy demands of the website. More info about the design of this site can be found <a href="index.html">here</a>.
-    </p>
-</div>
+    <div id=footer>
+
+        <div id="footer-nav">
+            <div class="navLink"><a href="index.html">About</a></div>
+            <div class="navLink"><a href="researchers.html">Researchers</a></div>
+            <div class="navLink" id="onPage"><a href="events.html">Events</a></div>
+            <div class="navLink"><a href="publications.html">Publications</a></div>
+            <div class="navLink"><a href="resources.html">Resources</a></div>
+            <div class="navLink"><a href="contact.html">Contact</a></div>
+        </div>
+
+        <div id="footer-content">
+            <p>
+                This website is served from a solar powered server run by the Low Carbon Research Methods group, in collaboration with Solar Protocol. The server is located in Peterborough, Canada. The design utilizes minimal design methods that lower the energy demands of the website. 
+            </p>
+
+            <p>
+                The weather and photovoltaic (PV) system data was last updated at 09:35 PM on 01/10/23 local server time.
+            </p>
+                
+            <div id="fDataContainer">
+                <div class="fDataBox">
+                    <p>Today's weather: clear sky</p>
+                    <p>Tomorrow's weather: broken clouds</p>
+                </div>
+                <div class="fDataBox">
+                    <p>Battery Charge: 52.0%</p>
+                </div>
+                <div class="fDataBox">
+                    <p>Page Size: 69.39MB (without videos) 185.76MB (with videos)</p>
+                </div>
+            </div>
+
+            <p>The graph below shows PV power production over the last 24 hours.</p>
+
+        </div>
+
+    </div>
 
 </div>
 

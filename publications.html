@@ -1,24 +1,28 @@
  <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="lcm.css" />
 <title>Low Carbon Methods</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/logos/favicon-16x16.png">
 </head>
 
 <body>
 
 <div id="headerContainer">
     <div id="logoContainer">
-        <a href="index.html"><img src="assets/logo_white_on_clear.png"></a>
+        <a href="index.html"><img src=assets/logos/logo_black_on_clear.png></a>
     </div>
 
     <div id="header-background">
     </div>
 
     <div id="header-local">
-        <div class="serverLocation">This is a solar powered server in Trente, Canada where the time is 3:45.</div>
-        <div class="serverLocation">Today is: sunny</div>
-        <div class="serverLocation">Tomorrow is: cloudy</div>
+        <div class="serverLocation">Served from a solar powered server in <span class="hideMedium">Peterborough,</span> Canada</div>
+        <div class="serverLocation"><span class="hideMinimize">Today's weather: clear sky</span></div>
+        <div class="serverLocation"><span class="hideMinimize">Tomorrow's weather: broken clouds</span></div>
+        <div class="serverLocation"><span class="showSmall hideMinimize">Battery Charge: 52.0%</span></div>
     </div>
     
     <div id="menu"><a href="publications.html#footer-nav">Menu</a></div>
@@ -35,100 +39,154 @@
 
     <div id="header-bat">
         <div id="batBar"></div>
-        <div id="batPercent">Battery Capacity 20%</div>
-<!--         <div class="statName">Battery Capacity</div>
- -->    </div>
+        <div id="batPercent">Battery Capacity 52.0%</div>
+    </div>
 
 </div>
 
 <div id=graphContainer>
     <div id="historyBar">
         <div class="hbarContainer">
-            <div class="hbar" id="hbar1"></div>
+            <div class="hbar" id="hbar1"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar2"></div>
+            <div class="hbar" id="hbar2"><span>1.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar3"></div>
+            <div class="hbar" id="hbar3"><span>3.9W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar4"></div>
+            <div class="hbar" id="hbar4"><span>17.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar5"></div>
+            <div class="hbar" id="hbar5"><span>19.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar6"></div>
+            <div class="hbar" id="hbar6"><span>8.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar7"></div>
+            <div class="hbar" id="hbar7"><span>5.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar8"></div>
+            <div class="hbar" id="hbar8"><span>4.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar9"></div>
+            <div class="hbar" id="hbar9"><span>4.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar10"></div>
+            <div class="hbar" id="hbar10"><span>3.6W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar11"></div>
+            <div class="hbar" id="hbar11"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar12"></div>
+            <div class="hbar" id="hbar12"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar13"></div>
+            <div class="hbar" id="hbar13"><span>1.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar14"></div>
+            <div class="hbar" id="hbar14"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar15"></div>
+            <div class="hbar" id="hbar15"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar16"></div>
+            <div class="hbar" id="hbar16"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar17"></div>
+            <div class="hbar" id="hbar17"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar18"></div>
+            <div class="hbar" id="hbar18"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar19"></div>
+            <div class="hbar" id="hbar19"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar20"></div>
+            <div class="hbar" id="hbar20"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar21"></div>
+            <div class="hbar" id="hbar21"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar22"></div>
+            <div class="hbar" id="hbar22"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar23"></div>
+            <div class="hbar" id="hbar23"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar24"></div>
+            <div class="hbar" id="hbar24"><span></span></div>
         </div>
     </div>
 
     <div id="time-container">
         <div id="twentyfour">-24 hrs</div>
         <div id="twelve">-12 hrs</div>
-        <div id="now">Now</div>
+        <div id="now">09:35 PM</div>
     </div>
 
 </div>
 
 <div id="content">
-    
 
+<!-- UPDATE FROM HERE-->
+<div class="contentItem">
+             <h2><a href="http://lowcarbonmethods.com/DIYMethods2022.html">DIY Methods 2022</a></h2>
+             Proceedings from the first DIY Methods conference, including 70+ zines discussing experimental research methods.
+ </div>
 
+<div class="contentItem">
+             <h2><a href="https://historiansforfuture.org/the-ways-we-work-part-3-working-solutions-to-unsustainable-academia/">The Way We Work: Part 3 - Working Solutions to Unsustainable Academia</a></h2>
+             Jekanowski, Rachel Webb,  Anne Pasek, and Kate Elliott. <i>Historians for the Future.</i> 20 May 2022. https://historiansforfuture.org/the-ways-we-work-part-2-extractivism-in-the-university/
+             <p>
+                A discussion on directions and goals for action towards a more just, accessible, and sustainable university.
+            </p>
+ </div>
+
+<div class="contentItem">
+             <h2><a href="https://historiansforfuture.org/the-ways-we-work-part-2-extractivism-in-the-university/">The Way We Work: Part 2 - Extractivism in the University</a></h2>
+             Jekanowski, Rachel Webb,  Anne Pasek, and Kate Elliott. <i>Historians for the Future.</i> 1 April 2022. https://historiansforfuture.org/the-ways-we-work-part-2-extractivism-in-the-university/
+             <p>
+                An analysis of the energy politics of university labour and business practices.
+            </p>
+ </div>
+
+<div class="contentItem">
+             <h2><a href="https://historiansforfuture.org/the-ways-we-work-part-1-oily-entanglements/">The Way We Work: Part 1 - Oily Entanglements</a></h2>
+             Jekanowski, Rachel Webb,  Anne Pasek, and Kate Elliott. <i>Historians for the Future.</i> 28 January 2022. https://historiansforfuture.org/the-ways-we-work-part-1-oily-entanglements/
+             <p>
+                A discussion of fossil fuel entanglements in institutional practices and archival research.
+            </p>
+ </div>
+
+<div class="contentItem">
+             <h2><a href="http://lowcarbonmethods.com/local/zine.html" target="_blank">Solar-Powered Media</a></h2>
+             Pasek, Anne and Benedetta Piantella. July 2021. http://lowcarbonmethods.com/local/zine.html
+             <p>
+                A zine about building your own solar-powered digital media storage infrastructure and sharing it online. It includes instructions and suggestions about the hardware and software this task requires, as well as ideas and directions for the kinds of applications and aesthetics that seem to work best with such systems.
+            </p>
+ </div>
+
+<div class="contentItem">
+             <h2><a href="https://www.energyhumanities.ca/news/making-and-meeting-online" target="_blank">Making and Meeting Online: A White Paper on E-Conferences, Workshops, and other Experiments in Low-Carbon Research Exchange</a></h2>
+            Pasek, Anne, Caleb Wellum, and Emily Roehl. Petrocultures Research Group. 6 October 2020. https://www.energyhumanities.ca/news/making-and-meeting-online.
+            <p>
+                Travel is not something academic workers should take for granted. The costs of travel shape who shows up at conferences and thus, who participates in the conversations that define a community of study. It also shapes environments, warming the world and expanding the sacrifice zones of global hypermobility. Presently, efforts to control the spread of Covid-19 have grounded many of us. This presents an opportunity to think about what conferences can or should be, to address the inequities and exclusions baked into current research norms, and to foster a more sustainable and accessible academe. As scholars of media and energy, and as e-conference organizers and participants ourselves, we have some early observations, advice, and provocations to offer. We have written this white paper to highlight what’s worked in the past, what hazards lie ahead for the future, and what potential gains could be won in the present.  
+            </p>
+</div>
+
+<div class="contentItem">
+            <h2><a href="https://estsjournal.org/index.php/ests/article/view/363" target="_blank">Low-Carbon Research: Building a Greener and More Inclusive Academy</a> </h2>
+        <p>
+        Anne Pasek, <i>Engaging Science and Technology Studies</i> 6(2020): https://doi.org/10.17351/ests2020.363.
+    </p>
+            <p>
+            This essay examines how the fossil fuel energy regimes that support contemporary academic norms in turn shape and constrain knowledge production. High-carbon research methods and exchanges, particularly those that depend on aviation, produce distinct exclusions and incentives that could be reformed in the transition to a low-carbon academy. Drawing on feminist STS, alternative modes of collective research creation and collaboration are outlined, along with an assessment of their potential challenges and gains. This commentary concludes with several recommendations for incremental and institutional changes, along with a call for scholars of social and technical systems to uniquely contribute to this transition.
+        </p>
+</div>
+
+<!-- UPDATE TO HERE-->
 
 <div id=footer>
 
@@ -141,13 +199,33 @@
         <div class="navLink"><a href="contact.html">Contact</a></div>
     </div>
     
-    <p>
-        This website is served from a solar powered server run by Low Carbon Research Methods, in collaboration with Solar Protocol, located in Trente, Canada
-    </p>
+    <div id="footer-content">
+        <p>
+            This website is served from a solar powered server run by the Low Carbon Research Methods group, in collaboration with Solar Protocol. The server is located in Peterborough, Canada. The design utilizes minimal design methods that lower the energy demands of the website. 
+        </p>
 
-    <p>
-        The design utilizes minimal design methods that lower the energy demands of the website. More info about the design of this site can be found <a href="index.html">here</a>.
-    </p>
+        <p>
+            The weather and photovoltaic (PV) system data was last updated at 09:35 PM on 01/10/23 local server time.
+        </p>
+            
+        <div id="fDataContainer">
+            <div class="fDataBox">
+                <p>Today's weather: clear sky</p>
+                <p>Tomorrow's weather: broken clouds</p>
+            </div>
+            <div class="fDataBox">
+                <p>Battery Charge: 52.0%</p>
+            </div>
+            <div class="fDataBox">
+                <p>Page Size: 63.24KB</p>
+            </div>
+        </div>
+
+        <p>
+            The graph below shows PV power production over the last 24 hours.
+        </p>
+    </div>
+
 </div>
 
 </div>

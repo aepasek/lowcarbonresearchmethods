@@ -1,23 +1,28 @@
  <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="lcm.css" />
+<meta charset="utf-8"/>
 <title>Low Carbon Methods</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/logos/favicon-16x16.png">
 </head>
 
 <body>
 
 <div id="headerContainer">
     <div id="logoContainer">
-        <a href="index.html"><img src="assets/logo_white_on_clear.png"></a>
+        <a href="index.html"><img src=assets/logos/logo_black_on_clear.png></a>
     </div>
 
     <div id="header-background"></div>
 
     <div id="header-local">
-        <div class="serverLocation">This is a solar powered server in Trente, Canada where the time is 3:45.</div>
-        <div class="serverLocation">Today is: sunny</div>
-        <div class="serverLocation">Tomorrow is: cloudy</div>
+        <div class="serverLocation">Served from a solar powered server in <span class="hideMedium">Peterborough,</span> Canada</div>
+        <div class="serverLocation"><span class="hideMinimize">Today's weather: clear sky</span></div>
+        <div class="serverLocation"><span class="hideMinimize">Tomorrow's weather: broken clouds</span></div>
+        <div class="serverLocation"><span class="showSmall hideMinimize">Battery Charge: 52.0%</span></div>
     </div>
 
     <div id="menu"><a href="index.html#footer-nav">Menu</a></div>
@@ -34,146 +39,172 @@
 
     <div id="header-bat">
         <div id="batBar"></div>
-        <div id="batPercent">Battery Capacity 20%</div>
-<!--         <div class="statName">Battery Capacity</div>
- -->    </div>
+        <div id="batPercent">Battery Charge 52.0%</div>
+    </div>
 
 </div>
 
 <div id=graphContainer>
     <div id="historyBar">
         <div class="hbarContainer">
-            <div class="hbar" id="hbar1"></div>
+            <div class="hbar" id="hbar1"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar2"></div>
+            <div class="hbar" id="hbar2"><span>1.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar3"></div>
+            <div class="hbar" id="hbar3"><span>3.9W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar4"></div>
+            <div class="hbar" id="hbar4"><span>17.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar5"></div>
+            <div class="hbar" id="hbar5"><span>19.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar6"></div>
+            <div class="hbar" id="hbar6"><span>8.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar7"></div>
+            <div class="hbar" id="hbar7"><span>5.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar8"></div>
+            <div class="hbar" id="hbar8"><span>4.3W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar9"></div>
+            <div class="hbar" id="hbar9"><span>4.1W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar10"></div>
+            <div class="hbar" id="hbar10"><span>3.6W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar11"></div>
+            <div class="hbar" id="hbar11"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar12"></div>
+            <div class="hbar" id="hbar12"><span>2.7W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar13"></div>
+            <div class="hbar" id="hbar13"><span>1.2W</span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar14"></div>
+            <div class="hbar" id="hbar14"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar15"></div>
+            <div class="hbar" id="hbar15"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar16"></div>
+            <div class="hbar" id="hbar16"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar17"></div>
+            <div class="hbar" id="hbar17"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar18"></div>
+            <div class="hbar" id="hbar18"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar19"></div>
+            <div class="hbar" id="hbar19"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar20"></div>
+            <div class="hbar" id="hbar20"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar21"></div>
+            <div class="hbar" id="hbar21"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar22"></div>
+            <div class="hbar" id="hbar22"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar23"></div>
+            <div class="hbar" id="hbar23"><span></span></div>
         </div>
         <div class="hbarContainer">
-            <div class="hbar" id="hbar24"></div>
+            <div class="hbar" id="hbar24"><span></span></div>
         </div>
     </div>
 
     <div id="time-container">
         <div id="twentyfour">-24 hrs</div>
         <div id="twelve">-12 hrs</div>
-        <div id="now">Now</div>
+        <div id="now">09:35 PM</div>
     </div>
 
 </div>
+
 
 <div id="content">
-<div class="event">
-<h2>About The Research Group</h2>
 
-<p>
-    The Low-Carbon Research Methods Group is a loosely affiliated network of scholars interested in examining how climate change not only stands to alter what we study, but how we do so. 
-</p>
-<p>
-    Its founding hypothesis is that an energy transition for academic methods—like energy transitions everywhere—offers opportunities to re-examine long-held assumptions and to redistribute benefits and harms (for both good and for ill). 
-</p>
-<p>
-    Working across different methodological traditions, as well as discursive and nondiscursive forms of inquiry, the research group seeks to explore the social and institutional prospects of decarbonizing academia, as well as the equity and epistemological gains that might be won thereby. 
-</p>
-<p>
-    The research group is founded and coordinated by Anne Pasek of Trent University. 
-</p>
-</div>
-<div class="contentItem">
-    <h3>About This Website</h3>
-    <img src="assets/catPV.png">
+<!-- UPDATE FROM HERE-->
+
+    <div class="contentItem">
+    <h2>About The Research Group</h2>
+
     <p>
-        This site is an evolving experiment with lower-carbon forms of digital design. Rather than being hosted in the cloud (and thus a distant data center with unknown climate impacts), all content on this site is stored and served from an off-grid solar-powered RaspberryPi computer in a Peterborough, Ontario backyard. This means that when energy demand and supply are mismatched, this website will occasionally go offline. Energy information is therefore integrated into the site design to communicate these factors to visitors. The data visualized in the background represents a 24-hour history of energy generation from the panel, while local time and weather forecasts are given in the header.
+        The Low-Carbon Research Methods Group is a loosely affiliated network of scholars interested in examining how climate change not only stands to alter what we study, but how we do so. 
     </p>
     <p>
-        Energy use also shapes how the site works and looks. To mitigate downtime, low-energy and low-data design choices were pursued, including dithered images, compressed videos, static site generation, default fonts, and the absence of trackers. As a consequence and as a co-benefit, the site is more screen-reader friendly and does not collect or store any user data.
+        Its founding hypothesis is that an energy transition for academic methods—like energy transitions everywhere—offers opportunities to re-examine long-held assumptions and to redistribute benefits and harms (for both good and for ill). 
     </p>
     <p>
-        Many inspirations and precedents guide this example of low-carbon digital design. Several aesthetic choices are informed by the early work of Low-Tech Magazine and the Small File Media Festival. The hardware for the system comes from Solar Protocol: an experiment in distributed, solar-powered networks, in which this site’s local server is also a node. Alex Nathanson, of Solar Power for Artists, coded the site. 
+        Working across different methodological traditions, as well as discursive and nondiscursive forms of inquiry, the research group seeks to explore the social and institutional prospects of decarbonizing academia, as well as the equity and epistemological gains that might be won thereby. 
     </p>
-</div>
-
-<div id=footer>
-
-    <div id="footer-nav">
-        <div class="navLink" id="onPage"><a href="index.html">About</a></div>
-        <div class="navLink"><a href="researchers.html">Researchers</a></div>
-        <div class="navLink"><a href="events.html">Events</a></div>
-        <div class="navLink"><a href="publications.html">Publications</a></div>
-        <div class="navLink"><a href="resources.html">Resources</a></div>
-        <div class="navLink"><a href="contact.html">Contact</a></div>
+    <p>
+        The research group is founded and coordinated by Anne Pasek of Trent University. 
+    </p>
     </div>
 
-    <p>
-        This website is served from a solar powered server run by Low Carbon Research Methods, in collaboration with Solar Protocol, located in Trente, Canada
-    </p>
+    <div class="contentItem">
+        <h3>About This Website</h3>
+        <img src="assets/catPV.png">
+        <p>
+            This site is an evolving experiment with lower-carbon forms of digital design. Rather than being hosted in the cloud (and thus a distant data center with unknown climate impacts), all content on this site is stored and served from an off-grid solar-powered RaspberryPi computer in a Peterborough, Ontario backyard. This means that when energy demand and supply are mismatched, this website will occasionally go offline. Energy information is therefore integrated into the site design to communicate these factors to visitors. The data visualized in the background represents a 24-hour history of energy generation from the panel, while local time, weather forecasts, and battery status are given in the header and footer.
+        </p>
+        <p>
+            Energy use also shapes how the site works and looks. To mitigate downtime, low-energy and low-data design choices were pursued, including dithered images, compressed videos, static site generation, default fonts, and the absence of trackers and autoplay. As a consequence and as a co-benefit, the site is more screen-reader friendly and does not collect or store any user data. The estimated amount of transfered data for each page can be found in the footer.
+        </p>
+        <p>
+            Many inspirations and precedents guide this example of low-carbon digital design. Several aesthetic choices are informed by the early work of <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website.html">Low-Tech Magazine</a> and the <a href="https://smallfile.ca/">Small File Media Festival</a>. The hardware for the system comes from <a href="http://solarprotocol.net/">Solar Protocol</a>: an experiment in distributed, solar-powered networks, in which this site’s local server is also a node. Alex Nathanson, of <a href="https://www.solarpowerforartists.com/">Solar Power for Artists</a>, coded the site. 
+        </p>
+    </div>
 
-    <p>
-        The design utilizes minimal design methods that lower the energy demands of the website. More info about the design of this site can be found <a href="/">here</a>.
-    </p>
-</div>
+<!-- UPDATE TO HERE -->
+
+    <div id=footer>
+
+        <div id="footer-nav">
+            <div class="navLink" id="onPage"><a href="index.html">About</a></div>
+            <div class="navLink"><a href="researchers.html">Researchers</a></div>
+            <div class="navLink"><a href="events.html">Events</a></div>
+            <div class="navLink"><a href="publications.html">Publications</a></div>
+            <div class="navLink"><a href="resources.html">Resources</a></div>
+            <div class="navLink"><a href="contact.html">Contact</a></div>
+        </div>
+
+        <div id="footer-content">
+            <p>
+                This website is served from a solar powered server run by the Low Carbon Research Methods group, in collaboration with Solar Protocol. The server is located in Peterborough, Canada. The design utilizes minimal design methods that lower the energy demands of the website. 
+            </p>
+
+            <p>
+                The weather and photovoltaic (PV) system data was last updated at 09:35 PM on 01/10/23 local server time.
+            </p>
+
+            <div id="fDataContainer">
+                <div class="fDataBox">
+                    <p>Today's weather: clear sky</p>
+                    <p>Tomorrow's weather: broken clouds</p>
+                </div>
+                <div class="fDataBox">
+                    <p>Battery Charge: 52.0%</p>
+                </div>
+                <div class="fDataBox">
+                    <p>Page Size: 1.28MB</p>
+                </div>
+            </div>
+
+            <p>
+                The graph below shows PV power production over the last 24 hours.
+            </p>
+        </div>
+
+    </div>
 
 </div>
 
