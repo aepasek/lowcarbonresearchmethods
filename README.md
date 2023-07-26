@@ -35,3 +35,11 @@ This code based is now managed by Anne Pasek -> https://github.com/aepasek/lowca
 <p>
 	Navigate to lowcarbonmethods directory (cd local/www from the pi interface) and run this code to pull latest directory:
 	`git pull origin main`
+</p>
+
+### Automate static site generator
+
+`sudo crontab -e`
+
+Add this line to the bottom of the file to run every 15 minutes
+`*/15 * * * * /usr/bin/python3 /home/pi/local/www/backend/lowcarbonmethods.py > /home/pi/local/www/backend/sitegenerator.log 2>&1`
