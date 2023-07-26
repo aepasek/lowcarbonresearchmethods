@@ -8,14 +8,9 @@ from keys import *
 src = "/home/pi/local/www/templates"
 dst = "/home/pi/local/www/"
 
-<<<<<<< Updated upstream
+# getServer is the location where the script retrieves CC data. It should use local host, but can use solarprototocol.net if needed for testing purposes
 getServer = "http://localhost"
 #getServer = "http://www.solarprotocol.net"
-#this got reversed in Jan 2022 reboot
-=======
-#getServer = "http://localhost"
-getServer = "http://www.solarprotocol.net"
->>>>>>> Stashed changes
 
 def getRequest(url):
 	try:			
