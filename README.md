@@ -1,7 +1,7 @@
 # lowcarbonresearchmethods
 An energy efficient design for the website of the Low Carbon Research Methods group
 
-This code based is not managed by Anne Pasek -> https://github.com/aepasek/lowcarbonresearchmethods
+This code based is now managed by Anne Pasek -> https://github.com/aepasek/lowcarbonresearchmethods
 
 ## Updating Pages
 
@@ -33,5 +33,5 @@ This code based is not managed by Anne Pasek -> https://github.com/aepasek/lowca
 ## Installation
 
 <p>
-	Navigate to lowcarbonmethods direction (cd local/www from the pi interface) and run this code to pull latest directory:
+	Navigate to lowcarbonmethods directory (cd local/www from the pi interface) and run this code to pull latest directory:
 	`git pull origin main`
